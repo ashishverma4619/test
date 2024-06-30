@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .gallery-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .image-container {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .gallery {
+            display: none; /* Initially hide the gallery */
+        }
+    </style>
+    <title>Gallery</title>
+</head>
+<body>
+
+<!-- Gallery -->
+
+<div id="button">
+    <button id="toggleButton">More Photo</button>
+</div>
+
+<div class="gallery" id="gallery">
+    <div class="gallery-wrapper">
+        <div class="image-container">
+            <img src="img/interior2.avif" alt="Image 1">
+            <h3>Interior</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/21.jpeg" alt="Image 2">
+            <h3>Description for Image 2</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/23.jpeg" alt="Image 3">
+            <h3>Description for Image 3</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/24.jpeg" alt="Image 4">
+            <h3>Description for Image 4</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/25.jpeg" alt="Image 5">
+            <h3>Description for Image 5</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/26.jpeg" alt="Image 6">
+            <h3>Description for Image 6</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/27.jpeg" alt="Image 7">
+            <h3>Description for Image 7</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/28.jpeg" alt="Image 8">
+            <h3>Description for Image 8</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/29.jpeg" alt="Image 9">
+            <h3>Description for Image 9</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/30.jpeg" alt="Image 10">
+            <h3>Description for Image 10</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/31.jpeg" alt="Image 11">
+            <h3>Description for Image 11</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/32.jpeg" alt="Image 12">
+            <h3>Description for Image 12</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/image1.jpeg" alt="Image 13">
+            <h3>Description for Image 13</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/image2.jpeg" alt="Image 14">
+            <h3>Description for Image 14</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/image3.jpeg" alt="Image 15">
+            <h3>Description for Image 15</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/image4.jpeg" alt="Image 16">
+            <h3>Description for Image 16</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/image5.jpeg" alt="Image 17">
+            <h3>Description for Image 17</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/image6.jpeg" alt="Image 18">
+            <h3>Description for Image 18</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/image7.jpeg" alt="Image 19">
+            <h3>Description for Image 19</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/image8.jpeg" alt="Image 20">
+            <h3>Description for Image 20</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/image9.jpeg" alt="Image 21">
+            <h3>Description for Image 21</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/image10.jpeg" alt="Image 22">
+            <h3>Description for Image 22</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/image11.jpeg" alt="Image 23">
+            <h3>Description for Image 23</h3>
+        </div>
+        <div class="image-container">
+            <img src="img/image12.jpeg" alt="Image 24">
+            <h3>Description for Image 24</h3>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal">
+    <img src="" alt="Modal Image" id="modalImage">
+</div>
+
+<!-- Gallery -->
+
+<script>
+document.getElementById('toggleButton').addEventListener('click', function() {
+    var gallery = document.getElementById('gallery');
+    if (gallery.style.display === 'none' || gallery.style.display === '') {
+        gallery.style.display = 'block';
+        this.textContent = 'Less Photo';
+    } else {
+        gallery.style.display = 'none';
+        this.textContent = 'More Photo';
+    }
+});
+</script>
+
+</body>
+</html>
